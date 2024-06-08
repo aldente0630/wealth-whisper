@@ -1,0 +1,32 @@
+proj:
+  proj_name: wealth-whisper
+  stage: dev
+  profile_name:
+  region_name: us-east-1
+
+data:
+  idx_duration: 0
+  idx_freq: d
+  idx_offset: 1
+  cron_expr: '0 15 * * ?'
+  pdf_parser_type: layout_pdf_reader
+  parent_chunk_size: 1000
+  parent_chunk_overlap: 100
+  child_chunk_size: 300
+  child_chunk_overlap: 30
+
+retriever:
+  embedding_model_name: amazon
+  retriever_type: ensemble
+  k: 5
+  multiplier: 2
+  semantic_weight: 0.3
+  use_hyde: True
+  use_rag_fusion: False
+  use_parent_document: True
+  use_time_weight: True
+  use_reorder: False
+  decay_rate: 0.05
+
+llm:
+  temperature: 0.0

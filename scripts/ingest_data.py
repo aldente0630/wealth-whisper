@@ -258,7 +258,7 @@ MAX_WORKERS: Final = 4
 
 if __name__ == "__main__":
     # Set the start and end dates of the web scraping
-    START_DATE, END_DATE = "2024-05-20", "2024-05-20"
+    START_DATE, END_DATE = "2024-05-17", "2024-05-20"
 
     config_dir = get_dir_path(os.path.join(os.pardir, "app", "configs"))
     config = load_config(os.path.join(config_dir, "config.yaml"))

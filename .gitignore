@@ -210,3 +210,6 @@ proc_data/
 raw_data/
 vector_store/
 cdk.context.json
+
+assets/web_scrap_docs/app.py
+scripts/web_scrap_docs.py
